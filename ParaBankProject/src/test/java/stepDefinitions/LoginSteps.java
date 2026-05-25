@@ -9,7 +9,6 @@ import pages.LoginPage;
 
 public class LoginSteps {
 
-    // Safely reads driver state through your centralized framework getter method
     LoginPage loginPage = new LoginPage(BaseClass.getDriver());
 
     @When("user enters username {string} and password {string}")
@@ -28,18 +27,15 @@ public class LoginSteps {
         if (outcome.equalsIgnoreCase("success")) {
             String successMsg = loginPage.successLogin();
             
-            // FIX 1: Confirms the login message content matches expectations
+            
             Assert.assertTrue(successMsg.contains("Welcome"), "Welcome text was missing from the dashboard panel!");
             
-            // FIX 2: Confirms the current browser destination points to the private account dashboard path
             Assert.assertTrue(BaseClass.getDriver().getCurrentUrl().contains("overview"), "Dashboard URL target path mismatch!");
         } else {
             String actualError = "";
             try {
-                // FIX 3: Dynamic evaluation to check for general verification errors
                 actualError = loginPage.getErrorMessage();
             } catch (Exception e) {
-                // Alternates to the missing field error selector if the credentials element times out
                 actualError = loginPage.blankErrorMessage();
             }
             

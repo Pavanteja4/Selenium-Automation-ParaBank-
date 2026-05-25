@@ -15,12 +15,6 @@ public class Registerationsteps {
 	WaitUtils wait = new WaitUtils(BaseClass.getDriver());
 
 	RegistrationPage register = new RegistrationPage(BaseClass.getDriver());
-//    @Given("user launches ParaBank application")
-//    public void user_launches_application() {
-//        register = new RegistrationPage(BaseClass.driver);
-//        wait = new WaitUtils(BaseClass.driver);
-//        System.out.println("You are on the ParaBank landing page");
-//    }
 
 	@When("user navigates to registration page")
 	public void user_navigates_to_registration_page() {
@@ -35,8 +29,8 @@ public class Registerationsteps {
 
 	@And("user enters valid registration details")
 	public void user_enters_valid_details() {
-		register.enterRegistrationDetails("veer", "Kujnd", "Vijawada", "Visakhm", "APs", "53kjb0001", "987654ds3210",
-				"123245", "tejaa1", "Teja@123");
+		register.enterRegistrationDetails("teja", "inakoti", "kakinada", "kakinada", "AP", "533291", "9876543210",
+				"123245", "pavan", "Teja@123");
 	}
 
 	@And("clicks on Register button")

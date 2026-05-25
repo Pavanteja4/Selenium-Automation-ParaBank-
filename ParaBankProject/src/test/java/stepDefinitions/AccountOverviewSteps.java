@@ -13,20 +13,7 @@ public class AccountOverviewSteps {
     LoginPage loginPage = new LoginPage(BaseClass.getDriver());
     AccountOverviewPage overviewPage = new AccountOverviewPage(BaseClass.getDriver());
     
-//    @Given("user launches ParaBank application")
-//    public void user_launches_parabank_application() {
-//        loginPage = new LoginPage(BaseClass.driver);
-//        overviewPage = new AccountOverviewPage(BaseClass.driver);
-//    }
 
-//    @And("user logs into ParaBank application")
-//    public void user_logs_into_parabank_application() {
-//    	loginPage = new LoginPage(BaseClass.driver);
-//    		overviewPage = new AccountOverviewPage(BaseClass.driver);
-//        loginPage.enterUsername("veeru");
-//        loginPage.enterPassword("veeru123");
-//        loginPage.clickLogin();
-//    }
     @And("click account overview")
     public void click_account_overview() {
 		overviewPage.clickAccountOverview();

@@ -71,7 +71,7 @@ public class UpdateContactPage {
 
     public void enterInvalidContactDetails() {
         wait.waitForVisibility(firstNameField).clear();
-//        lastNameField.clear();
+
     }
 
     public void clickUpdateProfileButton() {

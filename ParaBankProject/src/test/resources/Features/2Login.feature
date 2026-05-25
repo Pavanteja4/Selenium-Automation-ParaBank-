@@ -11,11 +11,11 @@ Feature: Login Module
     Examples:
 
       | username    | password    | outcome |
-      | tejaa1   | Teja@123  | success |
+      | pavan   | Teja@123  | success |
       | jjdudjd  | Teja@123   | failure |
-      | tejaa1  | ibdv   | failure |
+      | pavan  | ibdv   | failure |
       |             |             | failure |
-      | veer   | veer123   | failure |
+      | veerr   | veer123   | failure |
 
   Scenario: Verify all UI elements on login page
     Then login page UI elements should be displayed

@@ -1,34 +1,4 @@
-//package utils;
-//
-//import java.time.Duration;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.openqa.selenium.support.ui.WebDriverWait;
-//
-//public class WaitUtils {
-//
-//    private WebDriver driver;
-//    private WebDriverWait wait;
-//    private final Duration DEFAULT_TIMEOUT = Duration.ofSeconds(10);
-//
-//    public WaitUtils(WebDriver driver) {
-//        this.driver = driver;
-//        this.wait = new WebDriverWait(this.driver, DEFAULT_TIMEOUT);
-//    }
-//
-//   
-//    public WebElement waitForVisibility(WebElement element) {
-//        return wait.until(ExpectedConditions.visibilityOf(element));
-//    }
-//
-//    
-//    public WebElement waitForElementToBeClickable(WebElement element) {
-//        return wait.until(ExpectedConditions.elementToBeClickable(element));
-//    }
-//}
-//   
-package utils;
+ package utils;
 
 import java.time.Duration;
 
