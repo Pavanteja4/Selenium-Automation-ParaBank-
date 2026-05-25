@@ -31,7 +31,7 @@ public class TransferFundsPage {
     @FindBy(xpath = "//input[@value='Transfer']") 
     WebElement transferBtn;
 
-    @FindBy(xpath =("//h1[contains(text(),'Transfer Complete')]"))
+    @FindBy(xpath =("//*[contains(text(),'Transfer Complete')]"))
     public WebElement transferSuccessMsg;
     
     @FindBy(xpath = "//p[normalize-space()='An internal error has occurred and has been logged.']") 

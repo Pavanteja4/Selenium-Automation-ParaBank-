@@ -40,7 +40,6 @@ public class TransferFundsSteps {
 
     @Then("funds should be transferred successfully")
     public void funds_should_be_transferred_successfully() {
-        // Validates the success header element is fully rendered in the DOM
         Assert.assertTrue(wait.waitForVisibility(transferPage.transferSuccessMsg).isDisplayed(), 
                 "Fund transfer confirmation screen did not load!");
     }

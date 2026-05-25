@@ -30,7 +30,7 @@ public class Registerationsteps {
 	@And("user enters valid registration details")
 	public void user_enters_valid_details() {
 		register.enterRegistrationDetails("teja", "inakoti", "kakinada", "kakinada", "AP", "533291", "9876543210",
-				"123245", "pavan1", "Teja@123");
+				"123245", "pavan01", "Teja@123");
 	}
 
 	@And("clicks on Register button")

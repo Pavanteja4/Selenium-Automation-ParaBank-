@@ -11,9 +11,9 @@ Feature: Login Module
     Examples:
 
       | username    | password    | outcome |
-      | pavan1   | Teja@123  | success |
+      | pavan01   | Teja@123  | success |
       | jjdudjd  | Teja@123   | failure |
-      | pavan1  | ibdv   | failure |
+      | pavan01  | ibdv   | failure |
       |             |             | failure |
       | veerr   | veer123   | failure |
 
