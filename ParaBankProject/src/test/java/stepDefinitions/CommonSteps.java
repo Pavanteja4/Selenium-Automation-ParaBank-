@@ -19,7 +19,7 @@ public class CommonSteps {
 
         loginPage = new LoginPage(BaseClass.driver);
 
-        loginPage.enterUsername("pavan");
+        loginPage.enterUsername("pavan1");
         loginPage.enterPassword("Teja@123");
 
         loginPage.clickLogin();
